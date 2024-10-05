@@ -38,23 +38,6 @@ public class RobotContainer {
     driverCommand.button(1).onTrue(Commands.runOnce(() -> swerve.fowardDef(), swerve));
   }
 
-      // Usado para adquirir o gatilho direito para um Shooter mais automático, e facilitar a pontuação no Speaker.
-    private boolean getRight() {
-    if (operatorCommand.getRawAxis(Controle.rightTrigger) != 0) {
-      return true;
-    }
-    return false;
-  }
-
-  
-    // Usado para adquirir o gatilho esquerdo para um Shooter mais automático, e facilitar a pontuação no Amp.
-  private boolean getLeft() {
-    if (operatorCommand.getRawAxis(Controle.leftTrigger) != 0) {
-      return true;
-    }
-    return false;
-  }
-
   public void setMotorBrake(boolean brake) {
     swerve.setMotorBrake(brake);
   }
