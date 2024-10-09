@@ -63,14 +63,6 @@ public class Teleoperado extends Command {
     }
   }
 
-  public double limitAngleSpeed(){
-    if(driverCommand.getLeftTriggerAxis() != 0){
-      return angleVelocity = 0.3;
-    } else {
-      return angleVelocity = 0.8;
-    }
-  }
-
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {}
