@@ -68,7 +68,7 @@ public final class Constants {
     public static final int yLeftAxis = 1;
     public static final int leftTrigger = 2;
     public static final int rightTrigger = 3;
-    public static final int xRightAxix = 4;
+    public static final int xRightAxis = 4;
     public static final int yRightAxis = 5;
 
     public static final int kA = 1;
